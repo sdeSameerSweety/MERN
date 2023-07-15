@@ -39,3 +39,14 @@ function f(a, b) {
     return console.log(sum);
   })(3, 4); // its save the loc 
   
+  // Functions Within Functions
+
+  function createFunction() {
+    function f(a, b) {
+      const sum = a + b;
+      return sum;
+    }
+    return f;
+  }
+  const f = createFunction();
+  console.log(f(3, 4)); // 7
