@@ -74,3 +74,11 @@ function f(a, b) {
   }
   const f = createAdder(3);
   console.log(f(4)); // 7
+
+  //Arrow Syntax
+
+  const f = (a, b) => {
+    const sum = a + b;
+    return sum;
+  };
+  console.log(f(3, 4)); // 7
