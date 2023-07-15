@@ -82,3 +82,8 @@ function f(a, b) {
     return sum;
   };
   console.log(f(3, 4)); // 7
+
+  // Omit Return
+
+  const f = (a, b) => a + b;
+console.log(f(3, 4)); // 7
