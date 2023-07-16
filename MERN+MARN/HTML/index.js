@@ -102,3 +102,12 @@ console.log(`My Employee Name Is ${employee}`);
 //copy via refferance
 let array = [1, 2 , 3 ];
 let array2 = array;
+
+//copy via refferance
+let array = [1, 2 , 3 ];
+let array2 = array;
+console.log(array);
+console.log(array2);
+array2.pop() 
+console.log(array)
+console.log(array2)
