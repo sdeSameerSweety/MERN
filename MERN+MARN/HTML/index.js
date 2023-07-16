@@ -101,4 +101,4 @@ console.log(`My Employee Name Is ${employee}`);
 
 //copy via refferance
 let array = [1, 2 , 3 ];
-
+let array2 = array;
