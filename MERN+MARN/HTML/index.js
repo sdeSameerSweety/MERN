@@ -111,3 +111,9 @@ console.log(array4);
 array2.pop() 
 console.log(array3)
 console.log(array4)
+//TYPECONVERSION
+//String To Array 
+let str = "SameerSweety";
+const arr = str.split("");
+console.log(arr); // Output: ["H", "e", "l", "l", "o"];
+
