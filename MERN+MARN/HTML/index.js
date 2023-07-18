@@ -115,4 +115,6 @@ console.log(arr4)
 //all string methods
 // length methods
 console.log(str.length)
+//charAt methods
+console.log(str1.charAt(5))
 
