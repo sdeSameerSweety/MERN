@@ -112,4 +112,7 @@ console.log(arr3)
 //Using regular expressions (regex) with the match() method:
 const arr4 = str1.match(/./g);
 console.log(arr4)
+//all string methods
+// length methods
+console.log(str.length)
 
