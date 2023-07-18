@@ -1,38 +1,21 @@
 // Standard Function Syntax
 
-function f(a, b) {
+function  f1(a, b) {
   const sum = a + b;
   return sum; // You Can't Export/Return Value After it 
 }
-console.log(f(3, 4)); // 7
+console.log(f1(3, 4)); // 7
 
 
 // Anonymous Function
 
-var f = function(a, b) {
+var f2 = function(a, b) {
   const sum = a + b;
   return sum;
 }
-console.log(f(3, 4)); // 7
+console.log(f2(3, 4)); // 7
 
 // Immediately Invoked Function Expression (IIFE)
-//Step-1
-var f = function(a, b) {
-  const sum = a + b;
-  return console.log(sum);
-}
-f(3, 4);
-
-//Step-2
-var f = function(a, b) {
-  const sum = a + b;
-  return console.log(sum);
-}
-
-(function(a, b) {
-  const sum = a + b;
-  return console.log(sum)})(3, 4); // or write this f() both are same
-//Step-3
 
 const result = (function(a, b) {
   const sum = a + b;
@@ -42,51 +25,51 @@ const result = (function(a, b) {
 // Functions Within Functions
 
 function createFunction() {
-  function f(a, b) {
+  function f5(a, b) {
     const sum = a + b;
     return sum;
   }
-  return f;
+  return f5;
 }
-const f = createFunction();
-console.log(f(3, 4)); // 7
+const f5 = createFunction();
+console.log(f5(3, 4)); // 7
 
 // Function Hoisting
 
 function createFunction() {
-  return f;
-  function f(a, b) {
+  return f6;
+  function f6(a, b) {
     const sum = a + b;
     return sum;
   }
 }
-const f = createFunction();
-console.log(f(3, 4)); // 7
+const f6 = createFunction();
+console.log(f6(3, 4)); // 7
 
 //Closures
 
 function createAdder(a) {
-  function f(b) {
+  function f7(b) {
     const sum = a + b;
     return sum;
   }
-  return f;
+  return f7;
 }
-const f = createAdder(3);
-console.log(f(4)); // 7
+const f8 = createAdder(3);
+console.log(f8(4)); // 7
 
 //Arrow Syntax
 
-const f = (a, b) => {
+const f9 = (a, b) => {
   const sum = a + b;
   return sum;
 };
-console.log(f(3, 4)); // 7
+console.log(f9(3, 4)); // 7
 
 // Omit Return
 
-const f = (a, b) => a + b;
-console.log(f(3, 4)); // 7
+const f10 = (a, b) => a + b;
+console.log(f10(3, 4)); // 7
 
 //Value Vs Refferance 
 
@@ -116,4 +99,5 @@ console.log(array4)
 let str = "SameerSweety";
 const arr = str.split("");
 console.log(arr); // Output: ["H", "e", "l", "l", "o"];
+
 
