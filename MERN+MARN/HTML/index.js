@@ -107,6 +107,9 @@ console.log(arr1)
 const arr2 = Array.from(str1)
 console.log(arr2)
 //Using the split() method with a delimiter:
-const arr3 = str.split(",")
+const arr3 = str1.split(",")
 console.log(arr3)
+//Using regular expressions (regex) with the match() method:
+const arr4 = str1.match(/./g);
+console.log(arr4)
 
