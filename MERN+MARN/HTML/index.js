@@ -99,5 +99,8 @@ console.log(array4)
 let str = "SameerSweety";
 const arr = str.split("");
 console.log(arr); // Output: ["H", "e", "l", "l", "o"];
+const str1 = "SameerSweety  ChepiChepa";
+const arr1 = [...str1];
+console.log(arr1)
 
 
