@@ -116,5 +116,10 @@ console.log(arr4)
 // length methods
 console.log(str.length)
 //charAt methods
-console.log(str1.charAt(5))
+console.log(str1.charAt(5)) // Returns the character at the specified index in a string.
+//charCodeAt methods
+console.log(str1.charCodeAt(5)) //Returns the Unicode value of the character at the specified index in a string.
+//concat methods
+console.log(str,str1) // Combines two or more strings and returns a new string.
+
 
