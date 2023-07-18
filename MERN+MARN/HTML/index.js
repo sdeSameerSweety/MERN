@@ -99,8 +99,14 @@ console.log(array4)
 let str = "SameerSweety";
 const arr = str.split("");
 console.log(arr); // Output: ["H", "e", "l", "l", "o"];
-const str1 = "SameerSweety  ChepiChepa";
+//Using the spread operator (...):
+const str1 = "SameerSweety , ChepiChepa";
 const arr1 = [...str1];
 console.log(arr1)
-
+//Using the `Array.from method:
+const arr2 = Array.from(str1)
+console.log(arr2)
+//Using the split() method with a delimiter:
+const arr3 = str.split(",")
+console.log(arr3)
 
